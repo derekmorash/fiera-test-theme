@@ -1,4 +1,46 @@
-# Dawn
+# Fiera technical test
+
+This is a simple technical interview test meant for Shopify theme developer candidates. The test is built using Shopify's Dawn theme as a base, though the test should be theme agnostic.
+
+### Our goal 
+
+We want to get a better understanding of your technical ability, your knowledge of Shopify theme development, and a bit of your process when developing new features. We are not looking for pixel perfect here, but a general eye for design and what looks good vs what doesn't is important.
+
+### The task
+
+The task is to build a "Featured collection" section. The screenshot below is meant as just a suggestion for the design, but we're not expecting an exact match. Feel free to change the design as you see fit. Feel free to use Dawns component sizing/spacing rules or simply use your own. We will be judging your section in isolation, not how it integrates with the rest of the theme.
+
+![Featured collection section design](design.png)
+
+### Requirements
+
+We'll be looking for the following requirements:
+
+- Use this repo as a base theme
+- Use github to keep track of your changes, opening a PR would be a great idea!
+- The section is Shopify OS2.0 compatible
+- The section has the following settings options:
+  - Title text
+  - Description text
+  - Collection selector
+- All code (Liquid/HTML, CSS, and JS) is clean, semantic, well organized, and doesn't introduce unnecessary bloat
+- Layout is fully responsive and looks good at all browser sizes
+- Code uses modern features supported by a majority of ever green browsers
+- Product items/cards should be built from scratch, don't reuse the cards already built into the theme :)
+
+### Test submission
+
+Feel free to do this on your own dev store but we will provide a collaborator account access to a dev store already populated with products. Simply upload your completed test theme to this store as an unpublished theme and let us know when it's ready to check out.
+
+It would be best if you cloned this repo to your own github account, then started a new branch to make your additions in and open a pull request when you're done. Your PR can include an explanation for anything that might need some extra clarity.
+
+The test is designed to be straightforward and open to interpretation, but please don't spend more than 3-4 hours on it. We're hoping that by providing the base theme and Shopify dev store access you'll have everything you need to do the test with minimal setup. We're not looking for perfection, we're looking for knowledge and problem solving skills.
+
+If you have any questions please feel free to reach out to Derek Morash (Lead dev) derek@fieracosmetics.com or Steven Braun steven@fieracosmetics.com.
+
+Thank you for taking the time to help us learn more about you!
+
+## Dawn
 
 [![Build status](https://github.com/shopify/dawn/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Shopify/dawn/actions/workflows/ci.yml?query=branch%3Amain)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=informational)](/.github/CONTRIBUTING.md)
