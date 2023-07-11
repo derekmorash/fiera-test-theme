@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lato&display=swap');
+
+:root {
+  --fp-heading: 'Arvo', serif;
+  --fp-text: 'Lato', sans-serif;
+}
+
+.featured-product {
+  margin: 20px auto;
+}
+
+.featured-product-hero {
+  padding: 50px 10px;
+  margin: 0 6px;
+}
+
+.collection-hero__title {
+  margin-top: 0;
+  font-family: var(--fp-heading);
+  font-size: 40px;
+}
+
+@media (max-width: 480px) {
+  .collection-hero__title{
+    font-size: 30px;
+  }
+}
+
+.collection-hero__description {
+  font-family: var(--fp-text);
+  font-size: 16px;
+}
+
+.featured-product__products {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.featured-product__card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 16%;
+  transition: .2s ease-in-out;
+}
+
+.featured-product__card a {
+  text-decoration: none;
+}
+
+.featured-product__card:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.featured-product__product-image {
+  display: block;
+  max-width: 100%;
+}
+
+.featured-product__product-info {
+  margin-top: auto;
+  font-family: var(--fp-text);
+  color: #000;
+}
+
+.featured-product__collection-url {
+  display: flex;
+  margin: 20px auto 0;
+  padding: 15px 30px;
+  text-align: center;
+  background-color: black;
+  max-width: 200px;
+  font-size: 15px;
+  color: #fff;
+  letter-spacing: 0.1px;
+  line-height: 18px;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.featured-product__collection-url:hover {
+  opacity: 0.8;
+}

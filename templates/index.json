@@ -1,5 +1,14 @@
 {
-  "sections": {},
+  "sections": {
+    "feature-products": {
+      "type": "featured-products",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false
+      }
+    }
+  },
   "order": [
+    "feature-products"
   ]
 }
