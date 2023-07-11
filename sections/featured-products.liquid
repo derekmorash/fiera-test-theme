@@ -1,12 +1,13 @@
 {{ 'component-featured-product.css' | asset_url | stylesheet_tag }}
 
 <div
-  class="collection-hero__inner page-width featured-product ">
+  class="collection-hero__inner page-width featured-product">
   <div
     class="featured-product-hero"
     {%- if section.settings.show_collection_image and section.settings.collection.image -%}
-      style="background-image:url('{{ section.settings.collection.image | img_url: 'master' }}'); background-size: {{ section.settings.background-size }};">
-  {% endif %}
+    style="background-image:url('{{ section.settings.collection.image | img_url: 'master' }}'); background-size: {{ section.settings.background-size }};"
+    {% endif %}>
+
 
     {% if section.settings.custom_collection_title != '' %}
       <h1
@@ -38,7 +39,8 @@
         <li>
           <div
             class="featured-product__card">
-            <a href="{{ product.url }}">
+            <a
+              href="{{ product.url }}">
               <img
                 class="featured-product__product-image"
                 src="{{ product.featured_image | img_url: '200x' }}"
@@ -54,7 +56,7 @@
       {% endfor %}
     </ul>
   </div>
-  
+
   {% if section.settings.collection %}
     <a
       href="{{ section.settings.collection.url }}"
@@ -84,33 +86,29 @@
         "default": 4
       },
       {
-      "type": "color",
-      "id": "text_color",
-      "label": "Text color",
-      "default": "#000"
+        "type": "color",
+        "id": "text_color",
+        "label": "Text color",
+        "default": "#000"
       },
       {
         "type": "text",
         "id": "custom_collection_title",
         "label": "Enter a custom collection title to overwrite the default one."
-      },
-      {
+      }, {
         "type": "checkbox",
         "id": "show_collection_description",
         "default": true,
         "label": "Show collection description?"
-      }, 
-      {
+      }, {
         "type": "header",
         "content": "Background Image"
-      },
-      {
+      }, {
         "type": "checkbox",
         "id": "show_collection_image",
         "default": false,
         "label": "Show collection image?"
-      },
-      {
+      }, {
         "type": "radio",
         "id": "background-size",
         "label": "Background style",
@@ -118,8 +116,7 @@
           {
             "value": "cover",
             "label": "Cover"
-          },
-          {
+          }, {
             "value": "contain",
             "label": "Contain"
           }
